@@ -1,32 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
-
-:root {
-	--cor-primaria:#10afba;
-	--cor-secundaria: #f9f9f9;
-	--cor-hover: #10afbab3;
-	--font-primaria: 'Roboto', sem serifa;
-}
-
 body {
     font-family: var(--font-primaria);
 }
 
 .cabecalho {
     color: #ffffff;
-    font-size: 15px;
+    font-size: 12px;
     text-align: right;
     background-color: var(--cor-primaria);
-    padding: 1.1rem;
+    padding: 10px;
 }
 
 .principal {
-	padding: 5rem 25rem;
+	padding: 4.5% 20%;
 }
 
 .principal__titulo {
     font-size: 25px;
     font-weight: 500;
-    padding: 2%;
+    padding: 15px;
     border: 1px solid #e5e5e5;
     border-radius: 5px 5px 0 0;
     background-color: var(--cor-secundaria);
@@ -36,7 +27,7 @@ body {
    display: flex;
    flex-direction: column;
    gap: 8px; /*espaçamento dos elementos*/
-   padding: 1rem;
+   padding: 10px;
    border: 1px solid #e5e5e5;
    border-radius: 0 0 5px 5px;
 }
@@ -49,16 +40,15 @@ body {
 
 .principal__formulario__rotulo {
     font-size: 15px;
-    padding-top: 1rem;
+    padding-top: 10px;
 }
 
 .principal__formulario__caixa {
-    padding: 0.7rem;
+    padding: 7px;
     background-color: var(--cor-secundaria);
     border: 1px solid #dfdfdf;
     border-radius: 3px;
     outline: none;
-    width: 30%;
 }
 
 .principal__formulario__caixa:hover {
@@ -70,13 +60,12 @@ body {
 }
 
 .principal__formulario__botao {
-    padding: 0.7rem;
+    padding: 7px;
     cursor: pointer;
     background-color: var(--cor-primaria);
     color: #ffffff;
     border: 1px solid #0e99a3;
     border-radius: 3px;
-    width: 30%;
 }
 
 .principal__formulario__botao:hover {
@@ -89,7 +78,7 @@ body {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     font-size: 13px;
     text-align: center;
-    padding: 1rem;
+    padding: 10px;
     position: relativa;
     left: 0; right: 0; bottom: 0;
 }
