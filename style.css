@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+:root {
+	--cor-primaria:#10afba;
+	--cor-secundaria: #f9f9f9;
+	--cor-hover: #10afbab3;
+	--font-primaria: 'Roboto', sem serifa;
+}
+
 body {
     font-family: var(--font-primaria);
 }
