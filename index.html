@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Coletor Stone</title>
+</head>
+<body>
+    <header class="cabecalho"><i class="fa fa-user-circle">Usuário</i></header>
+    <main class="principal">
+        <h1 class="principal__titulo">Reprocessamento Stone</h1>
+        <form action="/" method="POST" class="principal__formulario">
+            <p class="principal__formulario__texto">Após solicitar reprocessamento, <a href="" class="principal__formulario__texto__link"> acompanhe o Status de Reprocessamento.</a></p>
+            <label for="pfj" class="principal__formulario__rotulo">Código da empresa</label>
+            <input type="text" id="pfj" name="pfj" placeholder="Código da empresa" class="principal__formulario__caixa">
+
+            <label for="estabelecimento" class="principal__formulario__rotulo">Número de estabelecimento</label>
+            <input type="text" id="estabelecimento" name="estabelecimento" placeholder="Digite o nº de estabelecimento" class="principal__formulario__caixa">
+
+            <label for="datainicio" class="principal__formulario__rotulo">Data inicial</label>
+            <input type="date" id="datainicio" name="datainicio" class="principal__formulario__caixa">
+
+            <label for="datatermino" class="principal__formulario__rotulo">Data final</label>
+            <input type="date" id="datatermino" name="datatermino" class="principal__formulario__caixa">
+
+            <input type="submit" value="Reprocessar" id="submit-btn" class="principal__formulario__botao">
+        </form>
+        <section >
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>&copy; Copyright  Gselle & Michel - 2023</p>
+    </footer>
+</body>
+</html>
