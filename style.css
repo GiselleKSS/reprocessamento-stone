@@ -90,6 +90,6 @@ body {
     font-size: 13px;
     text-align: center;
     padding: 1rem;
-    position: fixed;
+    position: relativa;
     left: 0; right: 0; bottom: 0;
 }
