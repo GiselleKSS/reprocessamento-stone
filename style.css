@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
 :root {
-	--cor-primaria:#10afba;
+	--cor-primaria:hsl(184, 84%, 40%);
 	--cor-secundaria: #f9f9f9;
 	--cor-hover: #10afbab3;
 	--font-primaria: 'Roboto', sem serifa;
@@ -19,11 +19,11 @@ body {
     padding: 10px;
 }
 
-.principal {
+.main {
 	padding: 4.5% 20%;
 }
 
-.principal__titulo {
+.main__titulo {
     font-size: 25px;
     font-weight: 500;
     padding: 15px;
@@ -32,27 +32,47 @@ body {
     background-color: var(--cor-secundaria);
 }
 
-.principal__formulario {
-   display: flex;
-   flex-direction: column;
+.main__form {
+   /*display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
    gap: 8px; /*espaçamento dos elementos*/
    padding: 10px;
    border: 1px solid #e5e5e5;
    border-radius: 0 0 5px 5px;
 }
 
-.principal__formulario__texto__link {
+.main__form__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.input__box:nth-child(n + 1) {
+    flex-direction: column;
+}
+
+.input__box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    padding: 10px;
+}
+
+
+.main__form__texto__link {
     color: #188FFF;
     cursor: pointer;
     text-decoration: none;
 }
 
-.principal__formulario__rotulo {
+.main__form__label {
     font-size: 15px;
-    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
-.principal__formulario__caixa {
+.main__form__input {
     padding: 7px;
     background-color: var(--cor-secundaria);
     border: 1px solid #dfdfdf;
@@ -60,15 +80,21 @@ body {
     outline: none;
 }
 
-.principal__formulario__caixa:hover {
+.main__form__input:hover {
     background-color: #ffffff;
 }
 
-.principal__formulario__caixa:focus {
+.main__form__input:focus {
     border-color: var(--cor-primaria);
 }
 
-.principal__formulario__botao {
+.input__btn {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.main__form__btn {
     padding: 7px;
     cursor: pointer;
     background-color: var(--cor-primaria);
@@ -77,17 +103,17 @@ body {
     border-radius: 3px;
 }
 
-.principal__formulario__botao:hover {
+.main__form__btn:hover {
     background-color: var(--cor-hover);
 }
 
-.rodape {
+.footer {
     color: #242424;
     background-color: var(--cor-secundaria);
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     font-size: 13px;
     text-align: center;
-    padding: 10px;
-    position: relativa;
+    padding: 15px;
+    position: fixed;
     left: 0; right: 0; bottom: 0;
 }
