@@ -9,6 +9,7 @@
 
 body {
     font-family: var(--font-primaria);
+    height: 100vh;
 }
 
 .cabecalho {
@@ -20,7 +21,7 @@ body {
 }
 
 .main {
-	padding: 4.5% 20%;
+	padding: 5rem 25rem;
 }
 
 .main__titulo {
@@ -33,38 +34,35 @@ body {
 }
 
 .main__form {
-   /*display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   gap: 8px; /*espaçamento dos elementos*/
    padding: 10px;
    border: 1px solid #e5e5e5;
    border-radius: 0 0 5px 5px;
 }
 
-.main__form__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.input__box:nth-child(n + 1) {
-    flex-direction: column;
-}
-
-.input__box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 30%;
+.main__form__texto {
     padding: 10px;
 }
-
 
 .main__form__texto__link {
     color: #188FFF;
     cursor: pointer;
     text-decoration: none;
+}
+
+.main__form__info {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    gap: 20px 40px;
+    padding: 20px 10px; 
+}
+
+.input__box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input__box:nth-child(n + 1) {
+    flex-direction: column;
 }
 
 .main__form__label {
@@ -91,7 +89,7 @@ body {
 .input__btn {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding: 20px 0;
 }
 
 .main__form__btn {
@@ -116,4 +114,38 @@ body {
     padding: 15px;
     position: fixed;
     left: 0; right: 0; bottom: 0;
+}
+
+@media (max-width: 1500px)
+{
+  .main {
+    padding: 5rem 20rem;
+  }
+}
+@media (max-width: 1300px)
+{
+  .main {
+    padding: 5rem 12rem;
+  }
+}
+@media (max-width: 1070px)
+{
+  .main {
+    padding: 5rem 7rem;
+  }
+}
+@media (max-width: 900px)
+{
+  .main {
+    padding: 5rem 5rem;
+  }
+}
+@media (max-width: 750px)
+{
+  .main__form__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+  }
 }
