@@ -11,29 +11,36 @@
 </head>
 <body>
     <header class="cabecalho"><i class="fa fa-user-circle"></i>Usuário</header>
-    <main class="principal">
-        <h1 class="principal__titulo">Reprocessamento Stone</h1>
-        <form action="/" method="POST" class="principal__formulario">
-            <p class="principal__formulario__texto">Após solicitar reprocessamento, <a href="" class="principal__formulario__texto__link"> acompanhe o Status de Reprocessamento.</a></p>
-            <label for="pfj" class="principal__formulario__rotulo">Código da empresa</label>
-            <input type="text" id="pfj" name="pfj" placeholder="Código da empresa" class="principal__formulario__caixa">
-
-            <label for="estabelecimento" class="principal__formulario__rotulo">Número de estabelecimento</label>
-            <input type="text" id="estabelecimento" name="estabelecimento" placeholder="Digite o nº de estabelecimento" class="principal__formulario__caixa">
-
-            <label for="datainicio" class="principal__formulario__rotulo">Data inicial</label>
-            <input type="date" id="datainicio" name="datainicio" class="principal__formulario__caixa">
-
-            <label for="datatermino" class="principal__formulario__rotulo">Data final</label>
-            <input type="date" id="datatermino" name="datatermino" class="principal__formulario__caixa">
-
-            <input type="submit" value="Reprocessar" id="submit-btn" class="principal__formulario__botao">
+    <main class="main">
+        <h1 class="main__titulo">Reprocessamento Stone</h1>
+        <form action="/" method="POST" class="main__form">
+            <p class="main__form__texto">Após solicitar reprocessamento,<a href="" class="main__form__texto__link"> acompanhe o Status de Reprocessamento.</a></p>
+            <div class="main__form__info">
+                <div class="input__box">
+                    <label for="pfj" class="main__form__label">Código da empresa</label>
+                    <input type="text" id="pfj" name="pfj" placeholder="Código da empresa" class="main__form__input">
+                </div>
+                <div class="input__box">
+                    <label for="estabelecimento" class="main__form__label">Número de estabelecimento</label>
+                    <input type="text" id="estabelecimento" name="estabelecimento" placeholder="Digite o nº de estabelecimento" class="main__form__input">
+                </div>
+                <div class="input__box">
+                    <label for="datainicio" class="main__form__label">Data inicial</label>
+                    <input type="date" id="datainicio" name="datainicio" class="main__form__input">
+                </div>
+                <div class="input__box">
+                    <label for="datatermino" class="main__form__label">Data final</label>
+                    <input type="date" id="datatermino" name="datatermino" class="main__form__input">
+                </div>
+            </div>
+                <div class="input__btn">
+                    <input type="submit" value="Reprocessar" id="submit-btn" class="main__form__btn">
+                </div>
+            
         </form>
-        <section >
-        </section>
     </main>
-    <footer class="rodape">
-        <p>&copy; Copyright  Gselle & Michel - 2023</p>
+    <footer class="footer">
+        <p>&copy; Copyright  Giselle & Michel - 2023</p>
     </footer>
 </body>
 </html>
